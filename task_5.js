@@ -28,6 +28,7 @@ class Electronics {
     }
 }
 
+
 class Devices extends Electronics {
     constructor(name, energy, price, type) {
         super(name, energy);
@@ -53,6 +54,7 @@ class Devices extends Electronics {
     }
 }
 
+
 class Hardware extends Electronics {
     constructor(name, energy, price, type) {
         super(name, energy);
@@ -70,6 +72,7 @@ class Hardware extends Electronics {
         console.log(`The hardware info: name - ${this.name}, energy - ${this.energy} watt, type - ${this.type}, price - ${this.price}, power - ${this.power}, energy consumed - ${this.energyConsumed} watt`);
     }
 }
+
 
 const iPhone = new Devices('iPhone', 100, 1500, 'device');
 console.log(iPhone.isPortable)
